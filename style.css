@@ -1,0 +1,879 @@
+/* MY FONTS:
+font-family: 'DM Serif Text', serif;
+font-family: 'Lobster', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'DM Serif Display', serif; */
+
+/* MY Colors:
+    #94dc94
+*/
+
+/* Scrollbar Style */
+::-webkit-scrollbar {
+    width: 14px;
+    height: 12px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 6px; 
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+/* Transition effect when loading into the page */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+.fade-in {
+    animation: fadeIn 0.8s ease-in forwards;
+}
+.fade-out {
+    animation: fadeOut 0.5s ease-out forwards;
+}
+
+/* Background Color */
+body {
+    background-color: #B5D3B5;
+}
+
+/* NavBar LOGO */
+.mynavbar {
+    background-color: #00000000;
+    min-width: 100%;
+}
+
+.mylogo{
+    width: 62px;
+}
+
+.mylogotext {
+    font-size: 32px;
+    color: white !important;
+    font-family: 'Lobster', sans-serif;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.452);
+}
+
+.mylogotext:hover {
+    color: white;
+}
+
+.mylogotext:active {
+    color: white;
+}
+
+
+/* Dropdown Menu Bar */
+.offcanvasbg {
+    background-color: #A7D6A7;
+}
+.mylogotextmenu {
+    font-size: 50px;
+    color: white;
+    font-family: 'Lobster', sans-serif;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.452);
+}
+.dropdown-menu {
+    background-color: rgba(255, 255, 255, 0.542);
+}
+.dropdown-item{
+    font-family: 'Montserrat', sans-serif;
+    font-size: medium;
+}
+
+.mynav-item {
+    position: relative;
+    text-decoration: none; 
+    font-size: x-large;
+    font-family: 'Montserrat', sans-serif;
+}
+.nav-link:active{
+    color: lightblue;
+    transition: 0s;
+}
+
+
+
+
+/* Carousel MAIN*/
+.mycr {
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.281);
+}
+
+.c-item {
+    height: 100vh;
+}
+
+.c-image {
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #7ba9cc4a;
+}
+
+.content-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: white;
+    text-align: center;
+}
+.content-overlay img{
+    height: 100px;
+    padding-bottom: 10px;
+}
+
+/* Main Text */
+.content-overlay h1 {
+    font-family: 'DM Serif Display', serif;
+    font-weight: 650;
+    font-size: 32px;
+    text-shadow: 2px 3px 1px rgba(0, 0, 0, 0.444);
+}
+.content-overlay p {
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.915);
+}
+.btn {
+    font-weight: 500;
+    font-family: 'Montserrat', serif;
+    background-color: #ffd166;
+    color: #000000!important;
+    border: 2px solid #8fbc8f;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.494);
+}
+.btn:hover{
+    background-color: #8fbc8f;
+    color: white!important;
+}
+
+/* Carousel2 */
+.mycardcontainer {
+    background-color: #A7D6A7!important;
+    box-shadow: 0px -5px 8px rgba(0, 0, 0, 0.068), 0px 5px 8px rgba(0, 0, 0, 0.068);
+}
+
+.mycardbox {
+    margin: 20px 10px;
+    padding: 20px;
+}
+
+.bgmycard {
+    background-color: #8ecae6;
+}
+
+.card_image {
+    min-height: 164px;
+    max-height: 164px;
+    object-fit: cover;
+}
+.card-title{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+}
+.card-text{
+    font-family: 'Open Sans', sans-serif;
+    font-size: medium;
+}
+
+
+/* Message 1 */
+.message1 h2{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+.message1 p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+
+/* Cards */
+.cardcontainer{
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.296);
+}
+.mycards {
+    display: flex; 
+}
+
+.card_images {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card_image1, .card_image2 {
+    height: 350px; 
+    padding: 0; 
+    position: relative; 
+}
+
+.cardoverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fb86008f; 
+    transition: 0.5s ease; 
+}
+.cardoverlay h1 {
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 145px;
+    color: white;
+    z-index: 1;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.335);
+    font-size: 26px;
+}
+.cardoverlay hr{
+    position: absolute;
+    width: 190px;
+    margin: 0;
+    border: 0;
+    border-top: 3px solid white; 
+    z-index: 1;
+    top: 186px;
+    left: 30px;
+    opacity: 1; 
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.319);
+}
+.cardoverlay p{
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 200px;
+    color: white;
+    z-index: 1; 
+    font-family: 'Open Sans', 'sans-serif';
+    font-weight: 700;
+    font-size: small;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.335);
+}
+.cardoverlay:hover, .cardoverlay:active{
+    background-color: #fb860000;
+}
+
+.cardoverlay2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffb8038c; 
+    transition: 0.5s ease; 
+}
+.cardoverlay2 h1 {
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 145px;
+    color: white;
+    z-index: 1;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.335);
+    font-size: 26px;
+}
+.cardoverlay2 hr{
+    position: absolute;
+    width: 190px;
+    margin: 0;
+    border: 0;
+    border-top: 3px solid white; 
+    z-index: 1;
+    top: 186px;
+    left: 30px;
+    opacity: 1; 
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.319);
+}
+.cardoverlay2 p{
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 200px;
+    color: white;
+    z-index: 1; 
+    font-family: 'Open Sans', 'sans-serif';
+    font-weight: 700;
+    font-size: small;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.335);
+}
+.cardoverlay2:hover, .cardoverlay2:active{
+    background-color: #fb860000;
+}
+
+.cardoverlay3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #219dbc85; 
+    transition: 0.5s ease; 
+}
+.cardoverlay3 h1 {
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 145px;
+    color: white;
+    z-index: 1;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.335);
+    font-size: 26px;
+}
+.cardoverlay3 hr{
+    position: absolute;
+    width: 190px;
+    margin: 0;
+    border: 0;
+    border-top: 3px solid white; 
+    z-index: 1;
+    top: 186px;
+    left: 30px;
+    opacity: 1; 
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.319);
+}
+.cardoverlay3 p{
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 200px;
+    color: white;
+    z-index: 1; 
+    font-family: 'Open Sans', 'sans-serif';
+    font-weight: 700;
+    font-size: small;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.335);
+}
+.cardoverlay3:hover, .cardoverlay3:active{
+    background-color: #fb860000;
+}
+
+.cardoverlay4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #8ecae677; 
+    transition: 0.5s ease; 
+}
+.cardoverlay4 h1 {
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 145px;
+    color: white;
+    z-index: 1;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.335);
+    font-size: 26px;
+}
+.cardoverlay4 hr{
+    position: absolute;
+    width: 190px;
+    margin: 0;
+    border: 0;
+    border-top: 3px solid white; 
+    z-index: 1;
+    top: 186px;
+    left: 30px;
+    opacity: 1; 
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.319);
+}
+.cardoverlay4 p{
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 200px;
+    color: white;
+    z-index: 1; 
+    font-family: 'Open Sans', 'sans-serif';
+    font-weight: 700;
+    font-size: small;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.335);
+}
+.cardoverlay4:hover, .cardoverlay4:active{
+    background-color: #fb860000;
+}
+
+
+@media (max-width: 767.98px) { 
+    .mycards {
+        flex-direction: column; 
+        height: auto; 
+    }
+}
+
+
+
+
+
+
+
+/* Message 2 */
+.message2 h2{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+.message2 p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+
+
+/* Footer */
+.myfooter {
+    box-shadow: 0px -5px 8px rgba(0, 0, 0, 0.208);
+    background-color: #7e5d4a;
+}
+
+i {
+    font-size: 25px;
+    width: 46px;
+}
+
+.myicons {
+    text-decoration: none;
+    color: white;
+}
+
+.myicons:hover {
+    color: rgba(255, 255, 255, 0.485);
+}
+.myicons:active {
+    color: rgb(255, 255, 255);
+}
+
+.mycopyright {
+    color: white;
+    padding-top: 10px;
+}
+
+
+
+/* Small */
+@media (min-width: 576px) {
+    /* Logo */
+    .mylogo{
+        width: 96px;
+    }
+    .mylogotext{
+        font-size: 50px;
+    }
+
+    /* Main Text */
+    .content-overlay h1 {
+        font-family: 'DM Serif Display', serif;
+        font-weight: 650;
+        font-size: 46px;
+        text-shadow: 2px 3px 1px rgba(0, 0, 0, 0.444);
+    }
+    .content-overlay p {
+        font-size: 18px;
+        font-family: 'Montserrat', sans-serif;
+        text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.915);
+    }
+    .btn {
+        font-size: medium;
+    }
+
+    .bgmycard {
+        min-width: 560px;
+        height: 400px;
+    }
+    .card_image {
+        min-height: 164px;
+        max-height: 480px;
+        object-fit: cover;
+    }
+
+    /* Cards */
+    .cardcontainer{
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.296);
+    }
+    .mycards {
+        display: flex; 
+        height: 350px; 
+    }
+    
+    .card_images {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .card_image1, .card_image2 {
+        height: 100%; 
+        padding: 0; 
+        position: relative; 
+    }
+    
+    .cardoverlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: 0.5s ease; 
+    }
+    .cardoverlay h1, .cardoverlay2 h1, .cardoverlay3 h1, .cardoverlay4 h1 {
+        position: absolute;
+        margin-left: 20px;
+        margin-top: 135px;
+        color: white;
+        z-index: 1;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.335);
+        font-size: 24px;
+    }
+    .cardoverlay hr, .cardoverlay2 hr, .cardoverlay3 hr, .cardoverlay4 hr {
+        position: absolute;
+        width: 210px;
+        margin: 0;
+        border: 0;
+        border-top: 3px solid white; 
+        z-index: 1;
+        top: 176px;
+        left: 20px;
+        opacity: 1; 
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.319);
+    }
+    .cardoverlay p, .cardoverlay2 p, .cardoverlay3 p, .cardoverlay4 p {
+        position: absolute;
+        margin-left: 20px;
+        margin-top: 185px;
+        color: white;
+        z-index: 1; 
+        font-family: 'Open Sans', 'sans-serif';
+        font-weight: 700;
+        font-size: x-small;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.335);
+    }
+    .cardoverlay2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: 0.5s ease; 
+    }
+    .cardoverlay3 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: 0.5s ease; 
+    }
+    .cardoverlay4 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: 0.5s ease; 
+    }
+
+}
+
+/* Medium */
+@media (min-width: 768px) {
+
+    /* Carousel Main */
+    /* Main Text */
+    .content-overlay h1 {
+        font-family: 'DM Serif Display', serif;
+        font-weight: 650;
+        font-size: 56px;
+        text-shadow: 2px 3px 1px rgba(0, 0, 0, 0.444);
+    }
+    .content-overlay p {
+        font-size: 20px;
+        font-family: 'Montserrat', sans-serif;
+        text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.915);
+    }
+    .btn {
+        font-size: larger;
+    }
+
+    /* Attraction Cards */
+    .bgmycard {
+        min-width: 560px;
+        height: 400px;
+    }
+    .card_image {
+        min-height: 164px;
+        max-height: 480px;
+        object-fit: cover;
+    }
+
+    .cardcontainer{
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.296);
+    }
+    .mycards {
+        display: flex; 
+        height: 410px; 
+    }
+    
+    .card_images {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .card_image1, .card_image2 {
+        height: 100%; 
+        padding: 0; 
+        position: relative; 
+    }
+    
+    .cardoverlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: 0.5s ease; 
+    }
+    .cardoverlay h1, .cardoverlay2 h1, .cardoverlay3 h1, .cardoverlay4 h1 {
+        position: absolute;
+        margin-left: 60px;
+        margin-top: 155px;
+        color: white;
+        z-index: 1;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.335);
+        font-size: 28px;
+    }
+    .cardoverlay hr, .cardoverlay2 hr, .cardoverlay3 hr, .cardoverlay4 hr {
+        position: absolute;
+        width: 210px;
+        margin: 0;
+        border: 0;
+        border-top: 3px solid white; 
+        z-index: 1;
+        top: 206px;
+        left: 60px;
+        opacity: 1; 
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.319);
+    }
+    .cardoverlay p, .cardoverlay2 p, .cardoverlay3 p, .cardoverlay4 p {
+        position: absolute;
+        margin-left: 60px;
+        margin-top: 220px;
+        color: white;
+        z-index: 1; 
+        font-family: 'Open Sans', 'sans-serif';
+        font-weight: 700;
+        font-size: small;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.335);
+    }
+    .cardoverlay2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: 0.5s ease; 
+    }
+    .cardoverlay3 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: 0.5s ease; 
+    }
+    .cardoverlay4 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: 0.5s ease; 
+    }
+
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+    /* Main */
+    .content-overlay{
+        width: 100%;
+    }
+
+    /* Dropdown Menu */
+    .mynav-item::before {
+        content: ''; 
+        position: absolute;
+        bottom: 0; 
+        left: 0; 
+        width: 0;
+        height: 2px;
+        background-color: #000; 
+        transition: width 0.5s ease; 
+    }
+    .mynav-item:hover::before {
+        width: 100%; 
+    }
+    .mynav-item:active::before {
+        background-color: lightblue; 
+    }
+    .mynav-item:hover::before {
+        width: 100%; 
+    }
+
+
+    /* Attraction Cards */
+    .bgmycard {
+        min-width: 800px;
+        height: 520px;
+    }
+
+    .card_image {
+        min-height: 164px;
+        max-height: 480px;
+        object-fit: cover;
+    }
+
+    /* Cards */
+    .cardcontainer{
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.296);
+    }
+    .mycards {
+        display: flex; 
+        height: 450px; 
+    }
+    
+    .card_images {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .card_image1, .card_image2 {
+        height: 100%; 
+        padding: 0; 
+        position: relative; 
+    }
+    
+    .cardoverlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: 0.5s ease; 
+    }
+    .cardoverlay h1, .cardoverlay2 h1, .cardoverlay3 h1, .cardoverlay4 h1 {
+        position: absolute;
+        margin-left: 60px;
+        margin-top: 165px;
+        color: white;
+        z-index: 1;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.335);
+    }
+    .cardoverlay hr, .cardoverlay2 hr, .cardoverlay3 hr, .cardoverlay4 hr {
+        position: absolute;
+        width: 300px;
+        margin: 0;
+        border: 0;
+        border-top: 3px solid white; 
+        z-index: 1;
+        top: 226px;
+        left: 60px;
+        opacity: 1; 
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.319);
+    }
+    .cardoverlay p, .cardoverlay2 p, .cardoverlay3 p, .cardoverlay4 p {
+        position: absolute;
+        margin-left: 60px;
+        margin-top: 240px;
+        color: white;
+        z-index: 1; 
+        font-family: 'Open Sans', 'sans-serif';
+        font-weight: 700;
+        font-size: medium;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.335);
+    }
+    .cardoverlay2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: 0.5s ease; 
+    }
+    .cardoverlay3 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: 0.5s ease; 
+    }
+    .cardoverlay4 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: 0.5s ease; 
+    }
+
+
+
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+    /* Attraction Cards */
+    .bgmycard {
+        min-width: 920px;
+        height: 580px;
+    }
+
+    .card_image {
+        min-height: 164px;
+        max-height: 480px;
+        object-fit: cover;
+    }
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {}
