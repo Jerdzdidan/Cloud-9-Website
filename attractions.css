@@ -60,7 +60,6 @@
     text-align: center;
     color: white;
     font-size: 12px;
-    -webkit-text-stroke: 1px black; 
 }
 
 .article{
@@ -277,6 +276,7 @@ i {
         left: 330px;
         font-size: 20px;
         opacity: 100;
+        -webkit-text-stroke: 1px black; 
     }
 
     .video{
