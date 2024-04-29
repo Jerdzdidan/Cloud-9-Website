@@ -241,6 +241,7 @@ i {
         left: 196px;
         font-size: 18px;
         opacity: 100;
+        -webkit-text-stroke: 1px black;
     }
 
     .video{
@@ -275,8 +276,7 @@ i {
     .overlay-text2 {
         left: 330px;
         font-size: 20px;
-        opacity: 100;
-        -webkit-text-stroke: 1px black; 
+        opacity: 100; 
     }
 
     .video{
